@@ -1,0 +1,9 @@
+{
+  "id": "claude",
+  "provider": "Anthropic",
+  "identifier": "claude-opus",
+  "version": "20260615",
+  "accessMode": "api",
+  "weightsAvailable": false,
+  "homepage": "https://anthropic.com"
+}

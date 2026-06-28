@@ -1,0 +1,69 @@
+.benchmarks-page {
+  max-width: 42rem;
+}
+
+.benchmarks-page__header {
+  margin-bottom: var(--space-8);
+}
+
+.benchmarks-page__header h1 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.benchmarks-page__lede {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.benchmarks-page__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.benchmarks-page__item {
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+
+.benchmarks-page__link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-6);
+  text-decoration: none;
+  color: var(--ink);
+  min-height: 44px;
+}
+
+.benchmarks-page__link:hover {
+  border-color: var(--ink);
+}
+
+.benchmarks-page__link:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.benchmarks-page__item-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.benchmarks-page__item-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.benchmarks-page__item-summary {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.5;
+}

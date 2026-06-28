@@ -1,0 +1,10 @@
+{
+  "id": "qwen-coder",
+  "provider": "Alibaba",
+  "identifier": "qwen3-coder",
+  "version": "480b-a3b",
+  "accessMode": "api",
+  "weightsAvailable": true,
+  "license": "Apache-2.0",
+  "homepage": "https://qwenlm.ai"
+}

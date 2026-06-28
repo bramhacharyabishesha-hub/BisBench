@@ -1,0 +1,131 @@
+.models-page {
+  max-width: 48rem;
+}
+
+.models-page__header {
+  margin-bottom: var(--space-8);
+}
+
+.models-page__header h1 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.models-page__lede {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.models-page__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.models-page__item {
+  border: 1px solid var(--rule);
+  background: #fff;
+  padding: var(--space-6);
+}
+
+.models-page__item-head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.models-page__item-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.models-page__item-provider {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.models-page__meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2) var(--space-6);
+  margin: 0 0 var(--space-4);
+}
+
+.models-page__meta-row {
+  display: flex;
+  gap: var(--space-2);
+  align-items: baseline;
+}
+
+.models-page__meta-row dt {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  min-width: 4.5rem;
+}
+
+.models-page__meta-row dd {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.models-page__appearances-title {
+  margin: 0 0 var(--space-2);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 500;
+}
+
+.models-page__appearances-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.models-page__appearance {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+.models-page__appearance a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.models-page__appearance a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.models-page__appearance-meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.models-page__appearance--empty {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 30rem) {
+  .models-page__meta {
+    grid-template-columns: 1fr;
+  }
+}

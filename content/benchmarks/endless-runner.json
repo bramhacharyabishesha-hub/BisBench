@@ -1,0 +1,66 @@
+{
+  "slug": "endless-runner",
+  "title": "Endless Runner",
+  "summary": "Build an endless runner. Four coding models received the same prompt and packaging requirements; visitors inspect and run each browser-ready build.",
+  "promptPath": "endless-runner.md",
+  "publishedAt": "2026-06-28",
+  "environment": {
+    "artifactFormat": "browser-ready-static",
+    "networkAccess": "none",
+    "notes": "Each output is a self-contained static archive with no runtime network access. No dependencies are installed and no build step runs inside BisBench."
+  },
+  "runs": [
+    {
+      "slug": "gpt-5-5",
+      "modelId": "gpt-5-5",
+      "modelDisplayName": "GPT-5.5",
+      "attempt": 1,
+      "effortLevel": "high",
+      "artifactPath": "endless-runner/gpt-5-5/",
+      "previewImagePath": "endless-runner/gpt-5-5.svg",
+      "runNotesPath": "endless-runner/gpt-5-5.md",
+      "capturedAt": "2026-06-20",
+      "status": "playable",
+      "protocolVersion": "v1"
+    },
+    {
+      "slug": "claude",
+      "modelId": "claude",
+      "modelDisplayName": "Claude Opus",
+      "attempt": 1,
+      "effortLevel": "high",
+      "artifactPath": "endless-runner/claude/",
+      "previewImagePath": "endless-runner/claude.svg",
+      "runNotesPath": "endless-runner/claude.md",
+      "capturedAt": "2026-06-20",
+      "status": "playable",
+      "protocolVersion": "v1"
+    },
+    {
+      "slug": "qwen-coder",
+      "modelId": "qwen-coder",
+      "modelDisplayName": "Qwen3 Coder",
+      "attempt": 1,
+      "effortLevel": "high",
+      "artifactPath": "endless-runner/qwen-coder/",
+      "previewImagePath": "endless-runner/qwen-coder.svg",
+      "runNotesPath": "endless-runner/qwen-coder.md",
+      "capturedAt": "2026-06-21",
+      "status": "partial",
+      "protocolVersion": "v1"
+    },
+    {
+      "slug": "open-model",
+      "modelId": "open-model",
+      "modelDisplayName": "Mistral Coder",
+      "attempt": 1,
+      "effortLevel": "high",
+      "artifactPath": "endless-runner/open-model/",
+      "previewImagePath": "endless-runner/open-model.svg",
+      "runNotesPath": "endless-runner/open-model.md",
+      "capturedAt": "2026-06-21",
+      "status": "failed",
+      "protocolVersion": "v1"
+    }
+  ]
+}

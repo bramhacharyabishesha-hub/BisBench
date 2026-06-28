@@ -1,0 +1,10 @@
+{
+  "id": "open-model",
+  "provider": "Mistral",
+  "identifier": "mistral-coder",
+  "version": "24b",
+  "accessMode": "open-weights",
+  "weightsAvailable": true,
+  "license": "Apache-2.0",
+  "homepage": "https://mistral.ai"
+}

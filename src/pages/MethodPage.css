@@ -1,0 +1,75 @@
+.method-page {
+  max-width: 42rem;
+}
+
+.method-page__header {
+  margin-bottom: var(--space-8);
+}
+
+.method-page__header h1 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.method-page__lede {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.method-page__protocol {
+  margin-bottom: var(--space-8);
+}
+
+.method-page__protocol h2,
+.method-page__section h2 {
+  margin: 0 0 var(--space-4);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.method-page__protocol-text {
+  margin: 0;
+  padding: var(--space-6);
+  background: #fff;
+  border: 1px solid var(--rule);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--ink);
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+}
+
+.method-page__section {
+  margin-bottom: var(--space-8);
+}
+
+.method-page__section p {
+  margin: 0 0 var(--space-4);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.method-page__section code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8125rem;
+  background: rgba(111, 63, 214, 0.08);
+  padding: 0 0.25rem;
+}
+
+.method-page__section ul {
+  margin: 0;
+  padding-left: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.method-page__section li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}

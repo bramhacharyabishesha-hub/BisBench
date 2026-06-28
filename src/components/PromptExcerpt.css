@@ -1,0 +1,65 @@
+.prompt-excerpt {
+  border: 1px solid var(--rule);
+  background: #fff;
+  padding: var(--space-6);
+}
+
+.prompt-excerpt__header {
+  margin-bottom: var(--space-4);
+}
+
+.prompt-excerpt__title {
+  margin: 0 0 var(--space-2);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 500;
+}
+
+.prompt-excerpt__subtitle {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.prompt-excerpt__subtitle a {
+  color: var(--accent);
+}
+
+.prompt-excerpt__body {
+  margin: 0;
+}
+
+.prompt-excerpt__pre {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--ink);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.prompt-excerpt__toggle {
+  margin-top: var(--space-4);
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.8125rem;
+  font-family: inherit;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.prompt-excerpt__toggle:hover {
+  border-color: var(--ink);
+}
+
+.prompt-excerpt__toggle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
