@@ -18,6 +18,13 @@ export function OutputCard({ run }: OutputCardProps) {
 
   return (
     <article className={`output-card output-card--${run.status}`}>
+      <header className="output-card__header">
+        <h3 className="output-card__model">{run.modelDisplayName}</h3>
+        <time className="output-card__date" dateTime={run.capturedAt}>
+          {formatDateShort(run.capturedAt)}
+        </time>
+      </header>
+
       <div className="output-card__preview">
         <img
           src={previewUrl}
@@ -31,16 +38,9 @@ export function OutputCard({ run }: OutputCardProps) {
             img.src = "/previews/placeholder.svg";
           }}
         />
-        <span
-          className={`output-card__status output-card__status--${run.status}`}
-        >
-          {status.text}
-        </span>
       </div>
 
       <div className="output-card__body">
-        <h3 className="output-card__model">{run.modelDisplayName}</h3>
-
         <dl className="output-card__meta">
           <div className="output-card__meta-row">
             <dt>Provider</dt>
@@ -61,12 +61,8 @@ export function OutputCard({ run }: OutputCardProps) {
             <dd>{run.model.accessMode}</dd>
           </div>
           <div className="output-card__meta-row">
-            <dt>Captured</dt>
-            <dd>
-              <time dateTime={run.capturedAt}>
-                {formatDateShort(run.capturedAt)}
-              </time>
-            </dd>
+            <dt>Status</dt>
+            <dd>{status.text}</dd>
           </div>
           {run.effortLevel && (
             <div className="output-card__meta-row">

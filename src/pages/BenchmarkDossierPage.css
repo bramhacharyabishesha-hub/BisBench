@@ -1,12 +1,12 @@
 .dossier {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-6);
 }
 
 .dossier__statement {
-  padding-bottom: var(--space-6);
-  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--ink);
 }
 
 .dossier__statement-text {
@@ -14,24 +14,27 @@
   font-family:
     "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
     "Times New Roman", serif;
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
-  font-weight: 500;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  font-size: clamp(3.35rem, 5.8vw, 6.5rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.055em;
   color: var(--ink);
 }
 
 .dossier__statement-support {
-  margin: var(--space-3) 0 0;
-  font-size: 1rem;
+  margin: var(--space-6) 0 0;
+  font-size: 0.875rem;
   color: var(--muted);
   max-width: 36rem;
 }
 
 .dossier__identity {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  align-items: baseline;
+  gap: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--rule);
 }
 
 .dossier__task-label {
@@ -45,8 +48,11 @@
 
 .dossier__task-title {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family:
+    "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 500;
   color: var(--ink);
 }
 
@@ -55,14 +61,14 @@
   font-size: 0.9375rem;
   color: var(--muted);
   line-height: 1.6;
-  max-width: 42rem;
+  max-width: 50rem;
 }
 
 /* Desktop: metadata rail + 2x2 output matrix */
 .dossier__layout {
   display: grid;
-  grid-template-columns: 20rem 1fr;
-  gap: var(--space-8);
+  grid-template-columns: minmax(17rem, 23rem) 1fr;
+  gap: 2.5rem;
   align-items: start;
 }
 
@@ -71,13 +77,13 @@
   flex-direction: column;
   gap: var(--space-6);
   position: sticky;
-  top: var(--space-6);
+  top: var(--space-4);
 }
 
 .dossier__matrix {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-6);
+  gap: 1rem;
 }
 
 .dossier--missing h1 {
@@ -95,6 +101,10 @@
 
 /* Tablet: metadata above a 2-column matrix */
 @media (max-width: 64rem) {
+  .dossier__identity {
+    grid-template-columns: 1fr;
+  }
+
   .dossier__layout {
     grid-template-columns: 1fr;
   }
@@ -108,6 +118,10 @@
 
 /* Mobile: single-column output list */
 @media (max-width: 48rem) {
+  .dossier__statement-text {
+    font-size: clamp(3rem, 18vw, 5rem);
+  }
+
   .dossier__rail {
     grid-template-columns: 1fr;
   }

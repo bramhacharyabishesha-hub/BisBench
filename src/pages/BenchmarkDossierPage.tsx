@@ -36,13 +36,6 @@ function Dossier({ benchmark }: { benchmark: BenchmarkManifest }) {
 
   return (
     <div className="dossier">
-      <section className="dossier__statement">
-        <h1 className="dossier__statement-text">Outputs are the benchmark.</h1>
-        <p className="dossier__statement-support">
-          Compare coding models through the software they actually produce.
-        </p>
-      </section>
-
       <section className="dossier__identity">
         <p className="dossier__task-label">Benchmark</p>
         <h2 className="dossier__task-title">{benchmark.title}</h2>
@@ -51,8 +44,16 @@ function Dossier({ benchmark }: { benchmark: BenchmarkManifest }) {
 
       <div className="dossier__layout">
         <div className="dossier__rail">
-          <BenchmarkMetadata benchmark={benchmark} />
+          <section className="dossier__statement">
+            <h1 className="dossier__statement-text">
+              Outputs are the benchmark.
+            </h1>
+            <p className="dossier__statement-support">
+              Compare coding models through the software they actually produce.
+            </p>
+          </section>
           <PromptExcerpt promptText={promptText} />
+          <BenchmarkMetadata benchmark={benchmark} />
         </div>
 
         <div className="dossier__matrix" role="list">

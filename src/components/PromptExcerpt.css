@@ -1,7 +1,7 @@
 .prompt-excerpt {
-  border: 1px solid var(--rule);
-  background: #fff;
-  padding: var(--space-6);
+  border: 0;
+  background: transparent;
+  padding: 0;
 }
 
 .prompt-excerpt__header {
@@ -13,7 +13,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--muted);
+  color: var(--ink);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-weight: 500;
 }
@@ -21,7 +21,7 @@
 .prompt-excerpt__subtitle {
   margin: 0;
   font-size: 0.8125rem;
-  color: var(--muted);
+  line-height: 1.5;
 }
 
 .prompt-excerpt__subtitle a {
@@ -35,8 +35,11 @@
 .prompt-excerpt__pre {
   margin: 0;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.875rem;
-  line-height: 1.6;
+  font-family:
+    "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.55;
   color: var(--ink);
   white-space: pre-wrap;
   word-break: break-word;
@@ -45,9 +48,10 @@
 .prompt-excerpt__toggle {
   margin-top: var(--space-4);
   background: none;
-  border: 1px solid var(--rule);
+  border: 0;
+  border-bottom: 1px solid var(--ink);
   color: var(--ink);
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-2) 0;
   font-size: 0.8125rem;
   font-family: inherit;
   cursor: pointer;
