@@ -11,15 +11,15 @@
   },
   "runs": [
     {
-      "slug": "gpt-5-5",
-      "modelId": "gpt-5-5",
-      "modelDisplayName": "GPT-5.5",
+      "slug": "fable-5",
+      "modelId": "fable-5",
+      "modelDisplayName": "Fable 5",
       "attempt": 1,
       "effortLevel": "high",
-      "artifactPath": "endless-runner/gpt-5-5/",
-      "previewImagePath": "endless-runner/gpt-5-5.svg",
-      "runNotesPath": "endless-runner/gpt-5-5.md",
-      "capturedAt": "2026-06-20",
+      "artifactPath": "endless-runner/fable-5/",
+      "previewImagePath": "endless-runner/fable-5.webp",
+      "runNotesPath": "endless-runner/fable-5.md",
+      "capturedAt": "2026-06-28",
       "status": "playable",
       "protocolVersion": "v1"
     },

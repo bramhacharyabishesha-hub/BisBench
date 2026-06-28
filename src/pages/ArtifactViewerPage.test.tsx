@@ -7,7 +7,7 @@ import { ArtifactViewerPage } from "./ArtifactViewerPage";
 import { ArtifactFrame } from "../viewer/ArtifactFrame";
 import { initialViewerModel, play } from "../viewer/viewerState";
 
-function renderViewer(path = "/benchmarks/endless-runner/runs/gpt-5-5") {
+function renderViewer(path = "/benchmarks/endless-runner/runs/fable-5") {
   return render(
     <MemoryRouter initialEntries={[path]}>
       <Routes>
@@ -23,7 +23,7 @@ function renderViewer(path = "/benchmarks/endless-runner/runs/gpt-5-5") {
 describe("ArtifactViewerPage", () => {
   it("renders the model name and benchmark breadcrumb outside the iframe", () => {
     renderViewer();
-    expect(screen.getByRole("heading", { name: "GPT-5.5" })).toBeVisible();
+    expect(screen.getByRole("heading", { name: "Fable 5" })).toBeVisible();
     expect(screen.getByText("endless-runner")).toBeVisible();
   });
 
@@ -76,7 +76,7 @@ describe("ArtifactViewerPage", () => {
 
     const iframe = container.querySelector("iframe");
     expect(iframe?.getAttribute("title")).toBe(
-      "GPT-5.5 build for endless-runner",
+      "Fable 5 build for endless-runner",
     );
   });
 

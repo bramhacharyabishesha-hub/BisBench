@@ -57,11 +57,11 @@ describe("fixture content loads through the schema", () => {
   });
 
   it("getRun returns a resolved run by slugs and undefined when missing", () => {
-    const run = getRun("endless-runner", "gpt-5-5");
-    expect(run?.modelDisplayName).toBe("GPT-5.5");
-    expect(run?.model.provider).toBe("OpenAI");
+    const run = getRun("endless-runner", "fable-5");
+    expect(run?.modelDisplayName).toBe("Fable 5");
+    expect(run?.model.provider).toBe("HyperAgent");
     expect(getRun("endless-runner", "nope")).toBeUndefined();
-    expect(getRun("nope", "gpt-5-5")).toBeUndefined();
+    expect(getRun("nope", "fable-5")).toBeUndefined();
   });
 
   it("every manifest path is a safe relative path", () => {

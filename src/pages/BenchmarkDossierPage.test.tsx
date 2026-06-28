@@ -38,7 +38,7 @@ describe("BenchmarkDossierPage", () => {
 
   it("renders every model display name from the fixture", () => {
     renderDossier();
-    expect(screen.getByText("GPT-5.5")).toBeVisible();
+    expect(screen.getByText("Fable 5")).toBeVisible();
     expect(screen.getByText("Claude Opus")).toBeVisible();
     expect(screen.getByText("Qwen3 Coder")).toBeVisible();
     expect(screen.getByText("Mistral Coder")).toBeVisible();
@@ -59,11 +59,11 @@ describe("BenchmarkDossierPage", () => {
   it("links each output to its viewer route", () => {
     renderDossier();
     const gptLink = screen.getByRole("link", {
-      name: "Open playable build from GPT-5.5",
+      name: "Open playable build from Fable 5",
     });
     expect(gptLink).toHaveAttribute(
       "href",
-      "/benchmarks/endless-runner/runs/gpt-5-5",
+      "/benchmarks/endless-runner/runs/fable-5",
     );
   });
 
@@ -136,7 +136,7 @@ describe("OutputCard", () => {
       </MemoryRouter>,
     );
     expect(screen.getByRole("heading", { level: 3 })).toHaveTextContent(
-      "GPT-5.5",
+      "Fable 5",
     );
   });
 
@@ -147,7 +147,7 @@ describe("OutputCard", () => {
       </MemoryRouter>,
     );
     const img = screen.getByRole("img");
-    expect(img).toHaveAttribute("alt", expect.stringContaining("GPT-5.5"));
+    expect(img).toHaveAttribute("alt", expect.stringContaining("Fable 5"));
   });
 
   it("shows the playable status label and note for a playable run", () => {

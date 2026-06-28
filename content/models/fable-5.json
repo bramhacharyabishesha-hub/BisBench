@@ -1,0 +1,8 @@
+{
+  "id": "fable-5",
+  "provider": "HyperAgent",
+  "identifier": "fable-5",
+  "version": "5",
+  "accessMode": "web",
+  "weightsAvailable": false
+}
